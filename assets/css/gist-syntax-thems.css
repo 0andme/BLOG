@@ -1,0 +1,13 @@
+@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/idle-fingers.css');
+
+
+body .gist .gist-meta {
+    /* display: none; */
+    color: #fff;
+    background-color: #323232;
+}
+
+body .gist .gist-meta a {
+    font-weight: 700;
+    color: #fff;
+}

@@ -1,0 +1,15 @@
+til:
+  name: TIL
+  description: False
+  cover: #assets/built/images/postcover/TIL-logo.png
+
+git-github:
+  name: git-github
+  description: False
+  cover: #assets/built/images/gitgithub.png
+
+project:
+  name: project
+  description: False
+  cover: #assets/built/images/background-frontend.jpg
+
