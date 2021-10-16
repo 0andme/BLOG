@@ -1,0 +1,3 @@
+[submodule "output"]
+	path = output
+	url = https://github.com/0andme/0andme.github.io.git
