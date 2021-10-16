@@ -142,7 +142,7 @@ exclude:
   - vendor
   - .travis.yml
   - node_modules
-  - assets/css
+  # - assets/css
   #- assets/images
   #- GHOST.txt
   #- gulpfile.js
