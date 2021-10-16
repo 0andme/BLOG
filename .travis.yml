@@ -1,7 +1,7 @@
 sudo: false
 language: ruby
 cache: bundler
-rvm:
+.ruby-version:
 - 3.0.2
 
 install:
