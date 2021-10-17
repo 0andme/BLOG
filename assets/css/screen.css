@@ -329,8 +329,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 7px 10px;
     border: #fff 2px solid;
     color: #fff;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 900;
     line-height: 1em;
     border-radius: 10px;
     opacity: 0.8;
@@ -810,8 +810,8 @@ Usage (In Ghost editor):
     padding: 0 5px 2px;
     font-size: 0.8em;
     line-height: 1em;
-    font-weight: 400!important;
-    background: var(--whitegrey);
+    font-weight: 900!important;
+    background: var(--codeColor);
     border-radius: 3px;
 }
 
@@ -844,7 +844,7 @@ Usage (In Ghost editor):
 }
 
 .post-full-content hr {
-    margin: 4vw 0;
+    margin: 3vw 0;
 }
 
 .post-full-content hr:after {
@@ -1214,7 +1214,7 @@ Usage (In Ghost editor):
     border: color(var(--midgrey) l(+20%)) 1px solid;
     color: var(--midgrey);
     font-size: 1.2rem;
-    line-height: 1;
+    line-height: 2;
     font-weight: 500;
     border-radius: 20px;
     transition: all ease 0.2s;
