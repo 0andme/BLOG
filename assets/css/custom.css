@@ -1,9 +1,4 @@
 @import "global.css";
-/* gist theme 테마 추가 */
-@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/idle-fingers.css');
-
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans'); */
-
 /* Search 결과화면을 위한 CSS 설정 시작 */
 ul.mylist li,
 ol.mylist li {
@@ -59,10 +54,14 @@ span.table-of-contents-list {
     color: #ce180b;
     font-family: 'Nanum Gothic', serif !important;
 }
+ul.table-of-contents-list.visual{
+    display: block;
+}
 
 ul.table-of-contents-list,
 ol.table-of-contents-list {
     list-style: none;
+    display: none;
     margin: 0px;
     padding: 0px;
     max-width: 250px;
