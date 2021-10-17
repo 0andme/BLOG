@@ -23,7 +23,8 @@
                 </header>
                 <section class="post-card-excerpt">
                     {% if page.next.excerpt %}
-                        <p>{{ page.next.excerpt | strip_html | truncatewords: 33, "" }}</p>
+                        {% assign nextExcerptParts = page.next.excerpt | split: "<!-- excerpt-start -->" %}
+                        <p>{{ nextExcerptParts[1]| strip_html | truncatewords: 33, "" }}</p>
                     {% else %}
                         <p>{{ page.next.content | strip_html | truncatewords: 33, "" }}</p>
                     {% endif %}
