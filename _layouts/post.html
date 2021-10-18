@@ -54,52 +54,41 @@ into the {body} of the default.hbs template -->
                 </div>
             </section>
 
-            <!-- Email subscribe form at the bottom of the page
-            {% if site.subscribers %}
-                <section class="subscribe-form">
-                    <h3 class="subscribe-form-title">Subscribe to {{ site.title }}</h3>
-                    <p>Get the latest posts delivered right to your inbox</p>
-                    {% include subscribe-form.html placeholder="youremail@example.com" %}
-                </section>
-            {% endif %} -->
             <!-- ! 페이지 네이게이션 이전글 다음글 -->
-
-            {% assign pageTag = page.tags | first %}
-            {% assign num = 0 %}
-            {% for post in site.posts %}
-            {% if post.tags contains pageTag%}
-            {% assign num = num | plus : 1 %}
-            {% endif %}
-            {% if post.title == page.title %}
-            {% assign post_index0 = num | minus : 1%}
-            {% assign post_index1 = num | plus : 1 %}
-            {% endif %}
-            {% endfor %}
-
-            {% assign pageTag = page.tags | first %}
-            {% assign num = 0 %}
-            {% for post in site.posts %}
-            {% if post.tags contains pageTag %}
-            {% assign num = num | plus : 1 %}
-            {% if num == post_index0 %}
-            {% assign postNext = post %}
-            {% endif %}
-            {% if num == post_index1 %}
-            {% assign postPre = post %}
-            {% endif %}
-            {% endif %}
-            {% endfor %};
-
-
-
             <div class="post-pagenav">
+                {% assign pageTag = page.tags | first %}
+                {% assign num = 0 %}
+                {% for post in site.posts %}
+                {% if post.tags contains pageTag%}
+                {% assign num = num | plus : 1 %}
+                {% endif %}
+                {% if post.title == page.title %}
+                {% assign post_index0 = num | minus : 1%}
+                {% assign post_index1 = num | plus : 1 %}
+                {% endif %}
+                {% endfor %}
+
+                {% assign pageTag = page.tags | first %}
+                {% assign num = 0 %}
+                {% for post in site.posts %}
+                {% if post.tags contains pageTag %}
+                {% assign num = num | plus : 1 %}
+                {% if num == post_index0 %}
+                {% assign postNext = post %}
+                {% endif %}
+                {% if num == post_index1 %}
+                {% assign postPre = post %}
+                {% endif %}
+                {% endif %}
+                {% endfor %}
+
                 {% if postPre %}
                 <div class="post-pagenav-btn pre">
                     <a href="{{ site.baseurl }}{{ postPre.url | remove_first: '/' }}">
                         <div class="post-pagenav-icon pre"></div>
                         <div class="post-pagenav-pre-text">
                             <div>이전 포스트</div>
-                            <h3>{{postPre.title}}</h3>
+                            <div>{{postPre.title}}</div>
                         </div>
                     </a>
 
@@ -111,7 +100,7 @@ into the {body} of the default.hbs template -->
                     <a href="{{ site.baseurl }}{{ postNext.url | remove_first: '/' }}">
                         <div class="post-pagenav-next-text">
                             <div>다음 포스트</div>
-                            <h3>{{postNext.title}}</h3>
+                            <div>{{postNext.title}}</div>
                         </div>
                         <div class="post-pagenav-icon next"></div>
                     </a>
@@ -119,6 +108,16 @@ into the {body} of the default.hbs template -->
                 </div>
                 {% endif %}
             </div>
+
+            <!-- Email subscribe form at the bottom of the page
+            {% if site.subscribers %}
+                <section class="subscribe-form">
+                    <h3 class="subscribe-form-title">Subscribe to {{ site.title }}</h3>
+                    <p>Get the latest posts delivered right to your inbox</p>
+                    {% include subscribe-form.html placeholder="youremail@example.com" %}
+                </section>
+            {% endif %} -->
+
 
             <footer class="post-full-footer">
                 <!-- Everything inside the #author tags pulls data from the author -->
