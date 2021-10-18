@@ -1202,7 +1202,10 @@ Usage (In Ghost editor):
     color: var(--midgrey);
     line-height: 1.3em;
 }
-
+.author-card-content p:hover a{
+    color: var(--auroSraRed);
+    text-decoration: none;
+}
 .post-full-footer-right {
     flex-shrink: 0;
     margin-left: 20px;
@@ -1221,8 +1224,8 @@ Usage (In Ghost editor):
 }
 
 .author-card-button:hover {
-    border-color: var(--blue);
-    color: var(--blue);
+    border-color: var(--auroSraRed);
+    color: var(--auroSraRed);
     text-decoration: none;
 }
 
