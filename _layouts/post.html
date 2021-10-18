@@ -86,9 +86,9 @@ into the {body} of the default.hbs template -->
                 <div class="post-pagenav-btn pre">
                     <a href="{{ site.baseurl }}{{ postPre.url | remove_first: '/' }}">
                         <div class="post-pagenav-icon pre"></div>
-                        <div class="post-pagenav-pre-text">
+                        <div class="post-pagenav-text ">
                             <div>이전 포스트</div>
-                            <div>{{postPre.title}}</div>
+                            <div class="title">{{postPre.title}}</div>
                         </div>
                     </a>
 
@@ -98,9 +98,9 @@ into the {body} of the default.hbs template -->
                 {% if postNext %}
                 <div class="post-pagenav-btn next">
                     <a href="{{ site.baseurl }}{{ postNext.url | remove_first: '/' }}">
-                        <div class="post-pagenav-next-text">
+                        <div class="post-pagenav-text ">
                             <div>다음 포스트</div>
-                            <div>{{postNext.title}}</div>
+                            <div class="title">{{postNext.title}}</div>
                         </div>
                         <div class="post-pagenav-icon next"></div>
                     </a>
