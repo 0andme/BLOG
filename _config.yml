@@ -107,7 +107,7 @@ plugins: [jekyll-paginate, jekyll-feed, jekyll-gist,jekyll-sitemap]
 feed:
   path: feed.xml
 
-# Travis-CI 입니다.
+# Travis-CI 설정입니다.
 safe: False
 lsi: False
 
