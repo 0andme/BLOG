@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: #assets/built/images/postcover/gitgithub.png
+cover: assets/built/images/postcover/react-logo.png
 navigation: True
 title: 리액트 입문 - 시작하기
 date: 2021-11-18 00:00:01
@@ -42,7 +42,7 @@ npx create-react-app 프로젝트명 --use-npm
 위의 명령어 중 하나를 터미널에 입력한다. 명령어를 입력하면 명령어를 수행한 폴더 바로 아래에 `프로젝트명`으로 폴더가 하나 생긴다. 아래와 같은 파일들이 들어있으면 된다.
 
 <span style="color:gray"> 아래는 `211118` 이라는 프로젝트를 생성했을 때 최초 생성된 폴더의 구조이다</span>
-<img src="/assets/built/postImages/react/react최초생성폴더.png" alt="프로젝트 생성시 최초 폴더 구조">
+<img src="/assets/built/images/react/react최초생성폴더.png" alt="프로젝트 생성시 최초 폴더 구조">
 
 **3. yarn 설치**
 
@@ -63,5 +63,5 @@ npm start
 yarn start
 ```
 
-위의 명령어를 중 하나를 입력해 로컬 서버를 연다.프로젝트 생성 후 파일 변경 없이 그대로 서버를 열었다면 아래와 같은 서버가 열린다. 이제 프로젝트를 시작하면 된다!
-<img src="/assets/built/postImages/react/react최초서버.png" alt="react 프로제긑 서버 최초 실행시 서버이미지">
+위의 명령어를 중 하나를 입력해 로컬 서버를 연다. 프로젝트 생성 후 파일 변경 없이 그대로 서버를 열었다면 아래와 같은 서버가 열린다. 이제 프로젝트를 시작하면 된다!
+<img src="/assets/built/images/react/react최초서버.png" alt="react 프로제긑 서버 최초 실행시 서버이미지">
