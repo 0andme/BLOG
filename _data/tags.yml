@@ -13,3 +13,7 @@ project:
   description: False
   cover: #assets/built/images/background-frontend.jpg
 
+react:
+  name: react
+  description: False
+  cover: #assets/built/images/background-frontend.jpg
