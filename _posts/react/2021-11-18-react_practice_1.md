@@ -191,26 +191,26 @@ author: 0andme
 
 ### 실습 (4) props 데이터 타입 지정하기
 
-1. `C4_PropsDataType` 컴포넌트 파일 생성
+1. `C4_PropsDataString` 컴포넌트 파일 생성
 
-   src/component/C4_PropsDataType.js 파일 생성
+   src/component/C4_PropsDataString.js 파일 생성
 
    ```jsx
    import React, { Component } from "react";
    // 필수 코드
    import PropTypes from "prop-types";
 
-   class C4_PropsDataType extends Component {
+   class C4_PropsDataString extends Component {
      render() {
        return <div>{this.props.name}</div>;
      }
    }
    // 자료형 선언
-   C4_PropsDataType.propTypes = {
+   C4_PropsDataString.propTypes = {
      name: PropTypes.string,
    };
 
-   export default C4_PropsDataType;
+   export default C4_PropsDataString;
    ```
 
 2. App.js에 연결 및 데이터 name 데이터 보내기
