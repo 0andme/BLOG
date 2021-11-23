@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: assets/built/images/postcover/react-logo.png
 navigation: True
-title: 리액트 입문 - 시작하기
+title: 리액트 입문 - 실습 환경 만들기
 date: 2021-11-18 00:00:01
 tags: [react]
 class: post-template
