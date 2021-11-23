@@ -29,6 +29,8 @@ author: 0andme
 
 [실습 5 - 가능한 모든 props 데이터 타입들](#실습-5-가능한-모든-props-데이터-타입들)
 
+[실습 6 - boolean 값 내려보내기](#실습-6---boolean-값-내려보내기)
+
 ---
 
 ### 실습 전에 기본 구조 살펴보기
@@ -293,3 +295,41 @@ author: 0andme
 
    아래와 같이 데이터가 잘 출력됨을 확인. 함수의 경우 console창에 '하하하'가 출력되었다
    <img src="/assets/built/images/react/실습5화면출력.png" alt="실습5번화면출력결과">
+
+---
+
+### 실습 (6) - Boolean 값 내려보내기
+
+1. `C6_PropsDataBoolean` 컴포넌트 파일 생성
+
+   src/component/C6_PropsDataBoolean.js 파일 생성
+
+   props 데이터 isTrue를 받아 참/거짓에 따라 message의 값이 달라지는 코드
+
+   ```jsx
+   import React, { Component } from "react";
+
+   class C6_PropsDataBoolean extends Component {
+     render() {
+       // props 데이터 isTrue
+       const message = this.props.isTrue ? "참" : "거짓";
+       return <div>{message}</div>;
+     }
+   }
+
+   export default C6_PropsDataBoolean;
+   ```
+
+2. App.js 파일에 연결 및 isTrue 데이터 보내기
+
+   참/거짓 두가지 경우 모두 출력해보기 위해 컴포넌트를 두 번 추가 했다.
+
+   ```jsx
+   <C6_PropsDataBoolean isTrue={false} />
+   <C6_PropsDataBoolean isTrue={true} />
+   ```
+
+3. 서버 열어서 결과 확인
+
+   보낸 데이터의 참/거짓 여부에 따라 메시지가 다르게 출력되는 것을 확인할 수 있다.
+   <img src="/assets/built/images/react/실습6화면출력.png" alt="실습6번화면출력결과">
